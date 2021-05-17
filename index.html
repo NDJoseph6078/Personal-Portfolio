@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Link to index styles  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Link to Bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Link to Font Awesome code -->
+    <script src="https://kit.fontawesome.com/08111d5429.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand disabled"  id="navbarName">Nathan Joseph</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Align's navbar items to the right -->
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#aboutMeSection">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skillsSection">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="welcomeSection" class="parallax">
+    <div class="container">
+      <div class="row">
+        <div id="welcomeText" class="col-12">
+          <h2>Welcome to my portfolio. My name is</h2>
+          <h1>Nathan Joseph</h1>
+          <h2>And I am <span id="welcomeMessage"></span><span id="cursor"></span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+    
+    
+  
+
+  <!-- About Section -->
+  <!-- Bootstrap hero element-->
+  <div id="aboutMeSection" class="parallax">
+    <div class="container" id="aboutMe">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <!-- Image that I need to change to a picture of myself -->
+        <div class="col-10 col-sm-8 col-lg-4">
+          <!-- Change link here -->
+          <img src="images/imageOfMe.png" class="d-block mx-lg-auto img-fluid" alt="pictureOfMe" width="60%" height="auto" loading="lazy"> <!-- Need to change image of myself to a better one-->
+        </div>
+        <!-- Paragraph of text about myself -->
+        <div class="col-lg-8">
+          <h2>About Me</h2>
+          <p class="lead">A self-motivated and inquisitive Software Development graduate looking to pursue a fulfilling career or apprenticeship in Software Development. I am responsible and diligent with the ability to work in a team or independently in order to deliver and maintain the highest standard of service. My eagerness and passion for the field of technology motivates me to always look for ways to upskill myself and learn more about the tech industry as a whole. I have a particular interest in Machine Learning and how software development allows for the integration and evolution of ML into modern day computing. Having studied Computer Science at A-level I am excited to find an opportunity to help me continue to grow and develop in the industry.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <!-- Link needed here -->
+            <button href="https://drive.google.com/file/d/1JokZQ3jfstRosnvrgJsnfXRnqmA9v4pt/view?usp=sharing" target="_blank" rel="noopener noreferrer" role="button" class="btn btn-secondary">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Skills section point and where it doesn't work how i want it to work-->
+  <div id="skillsSection">
+    <div class="container">
+      <h1>My skills</h1>
+      <!-- Contain a group of icons which will have an action on click to display text -->
+      <div class="row " id="skills">
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 python">
+          <div class="skillIcons">
+            <i class="fab fa-python" data-bs-toggle="collapse" href="#pythonCollapse" role="button" aria-expanded="false" aria-controls="pythonCollapse">Python</i>
+          </div>
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="pythonCollapse">
+            <div class="card card-body">
+              Using Python I am able to incorporate key fundamental algorithm design principles such as control flow, data structures, subroutines and iterating through code.
+            </div>
+          </div>
+        </div>
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 mySQL">
+          <div class="skillIcons">
+            <i class="fas fa-database" data-bs-toggle="collapse" href="#mySQLCollapse" role="button" aria-expanded="false" aria-controls="mySQLCollapse">MySQL</i>
+          </div>
+          
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="mySQLCollapse">
+            <div class="card card-body">
+              I am able to use MySQL queries to enable interaction between a website and a database in order to request information to populate a webpage or insert user input data from the webpage onto the database to be stored.
+            </div>
+          </div>
+        </div>
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 html">
+          <div class="skillIcons">
+            <i class="fab fa-html5" data-bs-toggle="collapse" href="#htmlCollapse" role="button" aria-expanded="false" aria-controls="htmlCollapse">HTMl</i>
+          </div>
+          
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="htmlCollapse">
+            <div class="card card-body">
+              I am able to effectively use HTML to create the structure of a website or web application.
+            </div>
+          </div>
+        </div>
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 css">
+          <div class="skillIcons">
+            <i class="fab fa-css3-alt" data-bs-toggle="collapse" href="#cssCollapse" role="button" aria-expanded="false" aria-controls="cssCollapse">CSS</i>
+          </div>
+          
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="cssCollapse">
+            <div class="card card-body">
+              I can design the front end of a web application using CSS to great effect.
+            </div>
+          </div>
+        </div>
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 javascript">
+          <div class="skillIcons">
+            <i class="fab fa-js-square" data-bs-toggle="collapse" href="#javascriptCollapse" role="button" aria-expanded="false" aria-controls="javascriptCollapse">JavaScript</i>
+          </div>
+          
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="javascriptCollapse">
+            <div class="card card-body">
+              I am able to embed JavaScript to add logic to manipulate my HTMl in order to add functionality to my web applications.
+            </div>
+          </div>
+        </div>
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 linux">
+          <div class="skillIcons">
+            <i class="fab fa-linux" data-bs-toggle="collapse" href="#linuxCollapse" role="button" aria-expanded="false" aria-controls="linuxCollapse">Linux</i>
+          </div>
+          
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="linuxCollapse">
+            <div class="card card-body">
+              I can use Linux CLI to manage and create new files and directories on a computer.
+            </div>
+          </div>
+        </div>
+        <!-- Creates the icon which when clicked on toggles the display of the collapseable text -->
+        <div class="col-lg-3 col-md-6 col-12 git">
+          <div class="skillIcons">
+            <i class="fab fa-git-alt" data-bs-toggle="collapse" href="#gitCollapse" role="button" aria-expanded="false" aria-controls="gitCollapse">Git</i>
+          </div>
+          
+          <!-- Creates collapsable text which displays when the icon is clicked -->
+          <div class="collapse multi-collapse" id="gitCollapse">
+            <div class="card card-body">
+              I am able to manage the source control of an application using Git and use GitBash in order to initialize new projects.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Projects section using bootstrap cards -->
+  <div id="projectSection">
+    <div class="container">
+      <div class="row " id="project">
+        <h1>Personal Projects</h1>
+        <!-- First card -->
+        <div class=" col-lg-4 col-md-6 col-12 firstCard">
+          <div class="card">
+            <!-- Class for links to each project -->
+            <div class="projectLinks">
+              <!-- Link to website of project -->
+              <a href="https://ndjoseph6078.github.io/Personal-Portfolio/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <!-- Link to github files for project -->
+              <a href="https://github.com/NDJoseph6078/Personal-Portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Portfolio website</h5>
+              <p class="card-text">A portfolio website to showcase my skills and progress as a software developer and to give employers a bit more insight on me.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Second card -->
+        <div class=" col-lg-4 col-md-6 col-12 secondCard">
+          <div class="card">
+            <!-- Class for links to each project -->
+            <div class="projectLinks">
+              <!-- Link to website of project -->
+              <a href="https://ndjoseph6078.github.io/Task-Planner-App/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <!-- Link to github files for project -->
+              <a href="https://github.com/NDJoseph6078/Task-Planner-App" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Task Planner App</h5>
+              <p class="card-text">An app that allows the user to create, delete and updates tasks that helps people to stay organized.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div class=" col-lg-4 col-md-6 col-12 thirdCard">
+          <div class="card">
+            <!-- Class for links to each project -->
+            <div class="projectLinks">
+              <!-- Link to website of project -->
+              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <!-- Link to github files for project -->
+              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores incidunt debitis pariatur odio. Iste esse officia quos quis nostrum obcaecati tenetur, laudantium deserunt voluptatem veniam, a placeat incidunt minus vero?
+              </p>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer section -->
+  <footer id="contactSection">
+    <div class="contentWrap">
+      <h2 class="footerHeader">Contact</h2>
+      <div class="contactInfo">
+        <!-- Font awesome icons with links to socials -->
+        <a href="https://github.com/NDJoseph6078" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nathan-joseph-755b15210/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nathanjoseph6078@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>
+        <small>© Copyright 2021, Nathan Joseph</small>
+      </p>
+    </div>
+  </footer>
+  <!-- Link to my Javascript file -->
+  <script src="app.js"></script>
+  <!-- Link to Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>

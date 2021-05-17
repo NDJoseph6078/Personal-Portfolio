@@ -1,0 +1,157 @@
+
+/* Unsure if some stylings are being overwritten or if they just aren't applying. i.e. changing the color or font size for the html, body stylings  */
+body{
+    background-color: #5CDB95;
+    color: #EDF5E1;
+    font-size: 1em;
+    font-weight: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+
+#welcomeMessage {
+	/* display: inline-block; */
+    font-size: inherit;
+	color: gray;
+	letter-spacing: 2px;
+}
+
+#cursor {
+	/* display: inline-block; */
+	height: 1em;
+	width: 0.1em;
+	background-color: gray;
+	animation: blink .75s step-end infinite;
+    
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: gray; 
+	}
+}
+
+#welcomeSection{
+    background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    height: 100vh;
+    min-height: 500px;
+    padding-top: 30vh;
+}
+
+#welcomeText h1{ 
+    font-size: 4em;
+}
+#welcomeText h2{
+    font-size: 3em;
+}
+
+#aboutMeSection{
+    text-align: justify;
+}
+#aboutMeSection img{
+    border-radius: 0%;
+}
+
+#skillsSection{
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+}
+
+.skillIcons{
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+#projectSection{
+    margin-top: 5vh;
+}
+
+
+/* Create the parallax scrolling effect */
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Makes it so the navbar stays at the top of the screen when scrolling */
+.navbar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+/* Styling the footer */
+#contactSection{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contentWrap{
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px 20px;
+    background-color: gray;
+}
+
+
+/* Styling for all anchor tags since i'm using font awesome icons */
+a:link {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    
+}
+a:active{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Size for the links in the cards and alignment*/
+.projectLinks{
+    font-size: 2em;
+    text-align: inline-end;
+}
+/* Styling for the project cards */
+.card{
+    margin: 4vh 1vw;
+    text-align: center;
+    border-radius: 6px;
+}
+/* Makes the size of the card 1.1x bigger when the mouse hovers other it */
+.card:hover{
+    transform: scale(1.1);
+    background-color: gray;
+    color: white;
+}
+
+/* Size of icons in the footer */
+.contactInfo{
+    font-size: 2em;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
