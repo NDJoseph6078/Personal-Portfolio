@@ -43,10 +43,10 @@ body{
 }
 
 #welcomeText h1{ 
-    font-size: 4em;
+    font-size: 500%;
 }
 #welcomeText h2{
-    font-size: 3em;
+    font-size: 400%;
 }
 
 #aboutMeSection{
@@ -102,7 +102,6 @@ body{
     padding: 20px 20px;
     background-color: gray;
 }
-
 
 /* Styling for all anchor tags since i'm using font awesome icons */
 a:link {
